@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Documento</título>
+    <estilo>
+
+cuerpo {
+  color de fondo: #F5F0E1; /* crema */
+}
+
+#temporizador {
+  Espaciado entre letras: 2px;
+  tamaño de fuente: 1em;
+}
+
+. días, . horas, . minutos, . sobras {
+  Relleno: 15px;
+  Ancho: 90px;
+}
+
+. Días {
+  antecedentes: #4B3F2A; /*cafetería*/
+}
+
+. horas {
+  antecedentes: #F5F0E1; /* crema */
+  color: #4B3F2A; /* texto café */
+}
+
+. acta {
+  antecedentes: #6B705C; /* verde olivo */
+}
+
+. sobras {
+  antecedentes: #C8BDAA; /* beige tierra */
+}
+
+. Números {
+  familia de fuentes: 'Montserrat', sans-serif;
+  color: #4B3F2A; /* ahora en café oscuro */
+  tamaño de fuente: 4em;
+  alineación de texto: centro;
+}
+	@@ -103,7 +97,7 @@
+</cuerpo>
+<Guión>
+    const año = new Date().getFullYear();
+const miFecha = nueva Fecha('Dic 25, 2025 00:00:00');
+consola.log(mifecha);
+
+cuenta regresiva
+let timer = setInterval(función() {
+  Obtén la fecha de hoy
+  const hoy = new Date().getTime();
+  Consigue la diferencia
+  const diff = myDate - hoy;
+  Matemática
+  let días = Matemáticas.piso(diff / (1000 * 60 * 60 * 24));
+  let horas = Matemáticas.piso((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutos = Matemáticas.piso((diff % (1000 * 60 * 60)) / (1000 * 60));
+  let segundos = Matemáticas.piso((% de diferencia  (1000 * 60)) / 1000);
+  Monitor
+  documento.getElementById("días").innerHTML=días
+  documento.getElementById("horas").innerHTML=horas
+  documento.getElementById("minutos").innerHTML=minutos
+  documento.getElementById("segundos").innerHTML=segundos
+}, 1);
+</Guión>
+</HTML>
